@@ -1,0 +1,84 @@
+header {
+    width: 100%;
+    height: 80px;
+    @include grid-center;
+    grid-template-columns: 70% 20% 10%;
+
+    #navegacionPrincipal {
+        @include totalTamaño;
+
+        #menuNavPrincipal {
+            height: 100%;
+            @include grid-center;
+            grid-template-columns: repeat(3,25%);
+            grid-template-rows: 40px;
+            place-content: center;
+
+            li {
+                list-style: none;
+                @include totalTamaño;
+                @include border;
+                @include grid-center;
+                grid-template-rows: 35px;
+
+                &:hover {
+                    @include box-shadow;
+                }
+
+                & a {
+                    @include totalTamaño;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #000;
+                    @include grid-center;
+                }
+
+                @include hover;
+                
+
+                &:hover .submenuNavPrincipal {
+                    visibility: visible;
+                } 
+
+                .submenuNavPrincipal {
+                    @include grid-center;
+                    visibility: hidden;
+                    grid-template-rows: auto;
+                    width: 100%;
+                    margin: 10px 0;
+                    padding: 5px;
+                    @include border;
+                    z-index: 1;
+                    background-color: $sobrePuestos;
+
+                    li {
+                        @include totalTamaño;
+                        text-align: center;
+                        @include border;
+                        @include grid-center;
+
+                    }
+                    &:hover {
+                        @include box-shadow;
+                    }
+
+                }
+                
+            }
+        }
+    }
+}
+
+#buscador {
+    @include border;
+    padding: 10px;
+    border: none;
+    @include box-shadow;
+    width: 80%;
+}
+
+#logoNavegacionPrincipal {
+    width: 50%;
+    height: 50%;
+    @include border;
+}
