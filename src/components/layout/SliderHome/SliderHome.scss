@@ -1,0 +1,14 @@
+.slider-container {
+    width: 80%;
+    @include grid-center;
+    grid-template-rows: 500px;
+    margin: 10px auto;
+    @include border;
+
+	.slider-image {
+		animation:  3s infinite alternate; 
+        width:80%;
+        height: 80%;
+        @include border;
+	}
+}
