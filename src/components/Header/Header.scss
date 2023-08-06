@@ -3,6 +3,10 @@ header {
     height: 80px;
     @include grid-center;
     grid-template-columns: 70% 20% 10%;
+    background-color: $sobrePuestos;
+    top: 0;
+    position: sticky;
+    @include box-shadow;
 
     #navegacionPrincipal {
         @include totalTamaño;
