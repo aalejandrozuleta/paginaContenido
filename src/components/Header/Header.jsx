@@ -1,25 +1,27 @@
 
 import { Link } from "react-router-dom";
 
-//* Estilos
-
-
-
-//* imágenes 
-import LogoImg from "../../assets/Logos/logoPelicula.svg"
+import LogoImg from "../../assets/Logos/logoPelicula.svg";
 
 function Header() {
+    const scrollToSection = (id) => {
+        const element = document.querySelector(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     const enlacesNavegacion = [
         { mensaje: "Inicio", link: "/" },
-        {mensaje: "Peliculas", link: "/peliculas"},
+        { mensaje: "Peliculas", link: "/peliculas" },
         { mensaje: "Series", link: "/series" },
         {
             mensaje: "Generos",
             link: "",
             submenu: [
-                { mensaje: "Animacion", link: "/generos/animacion" },
-                { mensaje: "Comedia", link: "/generos/comedia" },
-                { mensaje: "Drama", link: "/generos/drama" }
+                { mensaje: "Drama", link: "#drama" },
+                { mensaje: "Comedia", link: "#comedia" },
+                { mensaje: "Animación", link: "#animacion" }
             ]
         }
     ];
@@ -28,7 +30,12 @@ function Header() {
         <ul className="submenuNavPrincipal">
             {submenu.map((subenlace, subIndex) => (
                 <li key={subIndex}>
-                    <Link to={subenlace.link}>{subenlace.mensaje}</Link>
+                    <Link
+                        to={submenu[0].link} // Cambiar a submenu[0].link
+                        onClick={() => scrollToSection(subenlace.link)}
+                    >
+                        {subenlace.mensaje}
+                    </Link>
                 </li>
             ))}
         </ul>
@@ -40,16 +47,25 @@ function Header() {
                 <ul id="menuNavPrincipal">
                     {enlacesNavegacion.map(({ mensaje, link, submenu }, index) => (
                         <li key={index}>
-                            <Link to={link}>{mensaje}</Link>
+                            {submenu ? (
+                                <Link
+                                    to={submenu[0].link} // Cambiar a submenu[0].link
+                                    onClick={() => scrollToSection(submenu[0].link)}
+                                >
+                                    {mensaje}
+                                </Link>
+                            ) : (
+                                <Link to={link}>{mensaje}</Link>
+                            )}
                             {submenu && renderSubMenu(submenu)}
                         </li>
                     ))}
                 </ul>
             </nav>
 
-            <input id="buscador" type="text" placeholder="Buscar"/>
+            <input id="buscador" type="text" placeholder="Buscar" />
 
-            <img src={LogoImg} alt="Esto es un logo " id="logoNavegacionPrincipal"/>
+            <img src={LogoImg} alt="Esto es un logo" id="logoNavegacionPrincipal" />
         </header>
     );
 }
