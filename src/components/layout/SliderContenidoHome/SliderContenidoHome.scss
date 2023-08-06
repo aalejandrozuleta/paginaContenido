@@ -1,0 +1,65 @@
+// BloquesServicioSlider.scss
+
+#sliderImgServicios {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .bloqueSliderServicios {
+        flex:  0 0 calc(100% / 5); 
+        height: 400px; 
+        margin: 0 10px; 
+        @include border;
+        overflow: hidden;
+        @include grid-center;
+
+        .imageWrapper {
+            @include totalTamaño;
+            max-width: 100%; 
+            max-height: 100%; 
+            object-fit: contain; 
+        }
+    }
+
+    .sliderArrows {
+        /* Flechas */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        @include grid-center;
+        cursor: pointer;
+        z-index: 1;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: $hover; 
+        }
+
+        svg {
+            width: 40px;
+            height: 40px;
+            fill: #000;
+            
+        }
+
+        &.arrowLeft {
+            left: 0;
+        }
+
+        &.arrowRight {
+            right: 0;
+        }
+    }
+}
