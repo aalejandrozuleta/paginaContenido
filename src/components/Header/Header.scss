@@ -14,7 +14,7 @@ header {
         #menuNavPrincipal {
             height: 100%;
             @include grid-center;
-            grid-template-columns: repeat(3,25%);
+            grid-template-columns: repeat(4,20%);
             grid-template-rows: 40px;
             place-content: center;
 

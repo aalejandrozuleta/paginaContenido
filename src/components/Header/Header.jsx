@@ -11,6 +11,7 @@ import LogoImg from "../../assets/Logos/logoPelicula.svg"
 function Header() {
     const enlacesNavegacion = [
         { mensaje: "Inicio", link: "/" },
+        {mensaje: "Peliculas", link: "/peliculas"},
         { mensaje: "Series", link: "/series" },
         {
             mensaje: "Generos",
