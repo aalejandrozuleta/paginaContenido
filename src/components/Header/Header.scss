@@ -11,12 +11,14 @@ header {
     #navegacionPrincipal {
         @include totalTamaño;
 
+
         #menuNavPrincipal {
             height: 100%;
             @include grid-center;
             grid-template-columns: repeat(4,20%);
             grid-template-rows: 40px;
             place-content: center;
+    
 
             li {
                 list-style: none;
@@ -24,6 +26,7 @@ header {
                 @include border;
                 @include grid-center;
                 grid-template-rows: 35px;
+        
 
                 &:hover {
                     @include box-shadow;
@@ -35,6 +38,7 @@ header {
                     text-decoration: none;
                     color: #000;
                     @include grid-center;
+            
                 }
 
                 @include hover;
@@ -42,6 +46,7 @@ header {
 
                 &:hover .submenuNavPrincipal {
                     visibility: visible;
+            
                 } 
 
                 .submenuNavPrincipal {
@@ -53,6 +58,7 @@ header {
                     padding: 5px;
                     @include border;
                     z-index: 1;
+            
                     background-color: $sobrePuestos;
 
                     li {
@@ -60,6 +66,7 @@ header {
                         text-align: center;
                         @include border;
                         @include grid-center;
+                
 
                     }
                     &:hover {
