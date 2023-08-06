@@ -1,0 +1,25 @@
+footer {
+    margin-top: 20px;
+    @include box-shadow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+
+    h3 {
+        color: #fff;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    #logosRedes {
+        @include grid-center;
+        grid-template-columns: repeat(3,40px);
+        column-gap: 20px;
+        img {
+            @include totalTamaño;
+            filter: invert(100%);
+        }
+    }
+}
+
