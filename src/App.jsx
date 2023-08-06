@@ -6,7 +6,7 @@ import { Series } from "./pages/Series/Series";
 
 //* Estilos 
 
-import "./public/Sass/Style.scss"
+import "./public/Sass/Style.scss";
 
 function App() {
   return (

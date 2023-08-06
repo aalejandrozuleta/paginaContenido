@@ -1,9 +1,9 @@
 // imageData.js
-import JokerImage from "../../../assets/Caratulas/Peliculas/Ted.jpg";
-import ParejaExplosivaImage from "../../../assets/Caratulas/Peliculas/ParejaExplosiva.jpg";
-import RideAlongImage from "../../../assets/Caratulas/Peliculas/RideAlong.jpg";
-import SpiderManImage from "../../../assets/Caratulas/Peliculas/SpiderMan.jpg";
-import Shrek from "../../../assets/Caratulas/Peliculas/Shrek.jpg";
+import JokerImage from "../../../assets/Caratulas/PeliculasPequeñas/1.jpg";
+import ParejaExplosivaImage from "../../../assets/Caratulas/PeliculasPequeñas/2.jpg";
+import RideAlongImage from "../../../assets/Caratulas/PeliculasPequeñas/3.jpg";
+import SpiderManImage from "../../../assets/Caratulas/PeliculasPequeñas/4.jpg";
+import Shrek from "../../../assets/Caratulas/PeliculasPequeñas/5.jpg";
 
 export const imgData = [
     { imgSrc: JokerImage, imgAlt: "Imagen 1" },

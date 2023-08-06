@@ -12,6 +12,9 @@ export const Home = () => {
     <div>
       <Header />
       <SliderHome />
+      <div id="TituloSlider">
+          <h2>Lo mas visto</h2>
+      </div>
       <SliderContenidoHome imgData={imgData} />
     </div>
   );

@@ -3,17 +3,19 @@
 
 
 //!Componentes
-
 //* Header
 @import "../../components/Header/Header.scss";
 //
-
-
 //* SliderHome
 @import "../../components/layout/SliderHome/SliderHome.scss";
-
 //
-
-
 //* SliderContenidoHome
 @import "../../components/layout/SliderContenidoHome/SliderContenidoHome.scss";
+
+
+//!paginas
+
+//* PaginaHome
+@import "../../pages/Home/Home.scss";
+//
+

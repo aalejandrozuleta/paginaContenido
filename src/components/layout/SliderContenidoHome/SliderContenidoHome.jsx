@@ -19,7 +19,6 @@ function SliderContenidoHome({ imgData }) {
 
     return (
         <section id="sliderImgServicios" ref={bloqueRef}>
-
             {imgData.map((data, index) => (
                 <article
                     className="bloqueSliderServicios"
