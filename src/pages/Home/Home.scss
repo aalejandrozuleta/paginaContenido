@@ -1,5 +1,6 @@
 #TituloSlider {
     @include grid-center;
+    width: 40%;
     height: 40px;
     text-align: center;
     background-color: $sobrePuestos;
@@ -7,4 +8,5 @@
     @include box-shadow;
     text-transform: uppercase;
     color: #fff;
+    margin: 0 auto;
 }
