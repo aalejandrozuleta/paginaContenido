@@ -6,8 +6,8 @@ import ShrekImg from '../../../../assets/Caratulas/Peliculas/Shrek.jpg';
 
 
 export const AnimacionImg = [
-    { imgSrc: SpidermanImg, imgAlt: "Imagen 1" },
-    { imgSrc: GatoBotasImg, imgAlt: "Imagen 2" },
+    { imgSrc: SpidermanImg, imgAlt: "Imagen 1", imgTitle: "Spiderman", imgDescription: "dafasfasfsafa",},
+    { imgSrc: GatoBotasImg, imgAlt: "Imagen 2" ,imgTitle: "Gato Con botas", imgDescription: "dafasfasfsafa",},
     { imgSrc: SpidermanImg2, imgAlt: "Imagen 3" },
     { imgSrc: EncantoImg, imgAlt: "Imagen 4" },
     { imgSrc: ShrekImg, imgAlt: "Imagen 5" },

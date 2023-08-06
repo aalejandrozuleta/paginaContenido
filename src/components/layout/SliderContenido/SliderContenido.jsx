@@ -1,6 +1,4 @@
 // SliderContenido.js
-
-import  { useRef, useState } from 'react';
 import SliderContenidoHome from "../SliderContenidoHome/SliderContenidoHome"; // Asegúrate de importar SliderContenidoHome correctamente
 
 export const SliderContenido = ({ categoria,descripcion, imgData }) => {

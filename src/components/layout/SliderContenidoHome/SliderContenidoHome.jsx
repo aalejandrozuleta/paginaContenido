@@ -1,10 +1,10 @@
-// SliderContenidoHome.js
+import { useRef, useState } from 'react';
 
-import  { useRef, useState } from 'react';
 
 function SliderContenidoHome({ imgData }) {
     const bloqueRef = useRef(null);
     const [currentPosition, setCurrentPosition] = useState(0);
+    const [hoveredIndex, setHoveredIndex] = useState(-1); // Estado para controlar el índice con hover
 
     const handleScrollLeft = () => {
         const bloqueWidth = bloqueRef.current.offsetWidth;
@@ -17,6 +17,14 @@ function SliderContenidoHome({ imgData }) {
         setCurrentPosition((prevPosition) => Math.min(prevPosition + bloqueWidth, maxPosition));
     };
 
+    const handleMouseEnter = (index) => {
+        setHoveredIndex(index);
+    };
+
+    const handleMouseLeave = () => {
+        setHoveredIndex(-1);
+    };
+
     return (
         <section id="sliderImgServicios" ref={bloqueRef}>
             {imgData.map((data, index) => (
@@ -24,21 +32,29 @@ function SliderContenidoHome({ imgData }) {
                     className="bloqueSliderServicios"
                     key={index}
                     style={{ transform: `translateX(-${currentPosition}px)` }}
+                    onMouseEnter={() => handleMouseEnter(index)}
+                    onMouseLeave={handleMouseLeave}
                 >
-                    <div className="imageWrapper" style={{ backgroundImage: `url(${data.imgSrc})` }}></div>
+                    <div className="imageWrapper" style={{ backgroundImage: `url(${data.imgSrc})` }}>
+                        {hoveredIndex === index && ( // Mostrar contenido del hover si el índice coincide
+                            <div className="hoverContent">
+                                <h4>{data.imgTitle}</h4>
+                                <p>{data.imgDescription}</p>
+                                <div className="hoverButtons">
+                                    <button>Ver</button>
+                                    <button>Ver tráiler</button>
+                                </div>
+                            </div>
+                        )}
+                    </div>
                 </article>
             ))}
 
-
             <div className="sliderArrows arrowLeft" onClick={handleScrollLeft}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M14 7l-5 5 5 5V7z" />
-                </svg>
+                {/* Ícono SVG para la flecha izquierda */}
             </div>
             <div className="sliderArrows arrowRight" onClick={handleScrollRight}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M10 17l5-5-5-5v10z" />
-                </svg>
+                {/* Ícono SVG para la flecha derecha */}
             </div>
         </section>
     );
