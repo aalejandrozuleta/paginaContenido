@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
-
+import FlechaIzquierdaImg from '../../../assets/Main/flechaIzquierda.png';
+import FlechaDerechaImg from '../../../assets/Main/fechaDerecha.png';
 
 function SliderContenidoHome({ imgData }) {
     const bloqueRef = useRef(null);
@@ -51,10 +52,10 @@ function SliderContenidoHome({ imgData }) {
             ))}
 
             <div className="sliderArrows arrowLeft" onClick={handleScrollLeft}>
-                {/* Ícono SVG para la flecha izquierda */}
+            <img src={FlechaIzquierdaImg} />
             </div>
             <div className="sliderArrows arrowRight" onClick={handleScrollRight}>
-                {/* Ícono SVG para la flecha derecha */}
+                <img src={FlechaDerechaImg} />
             </div>
         </section>
     );

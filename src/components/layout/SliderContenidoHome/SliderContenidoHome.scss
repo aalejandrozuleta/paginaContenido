@@ -100,24 +100,20 @@
         z-index: 1;
         transition: background-color 0.3s;
 
-        &:hover {
-            background-color: #3498db;
-        }
-
         svg {
             width: 20px;
             height: 20px;
-            fill: #fff;
+            fill: red;
         }
 
         &.arrowLeft {
             left: 0;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: #fff;
         }
 
         &.arrowRight {
             right: 0;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: #fff;
         }
     }
 }
