@@ -1,5 +1,5 @@
 // imageData.js
-import JokerImage from "../../../assets/Caratulas/Peliculas/Joker.jpg";
+import JokerImage from "../../../assets/Caratulas/Peliculas/Ted.jpg";
 import ParejaExplosivaImage from "../../../assets/Caratulas/Peliculas/ParejaExplosiva.jpg";
 import RideAlongImage from "../../../assets/Caratulas/Peliculas/RideAlong.jpg";
 import SpiderManImage from "../../../assets/Caratulas/Peliculas/SpiderMan.jpg";
