@@ -4,7 +4,6 @@ import PijamaIMg from "../../../../assets/Caratulas/Peliculas/PijamaRayas.jpg";
 import BajoEstrellaImg from "../../../../assets/Caratulas/Peliculas/BajoEstrellas.jpg";
 import JokerImg from "../../../../assets/Caratulas/Peliculas/Joker.jpg";
 import ApostadorImg from "../../../../assets/Caratulas/Peliculas/Apostador.jpg";
-
 export const DramaImg = [
     {
         imgSrc: TheWhaleImg,

@@ -1,13 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import { Home } from "./pages/Home/Home";
 import { Peliculas } from "./pages/Peliculas/Peliculas";
 import { Series } from "./pages/Series/Series";
-
 //* Estilos 
-
 import "./public/Sass/Style.scss";
-
 function App() {
   return (
     <Router>
@@ -19,5 +15,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;

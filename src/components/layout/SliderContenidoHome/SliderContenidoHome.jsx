@@ -1,31 +1,17 @@
 import { useRef, useState } from 'react';
 import FlechaIzquierdaImg from '../../../assets/Main/flechaIzquierda.png';
 import FlechaDerechaImg from '../../../assets/Main/fechaDerecha.png';
-
+import {handleScrollLeft,handleScrollRight,handleMouseEnter,handleMouseLeave} from './Funcionalidades';
 function SliderContenidoHome({ imgData }) {
     const bloqueRef = useRef(null);
     const [currentPosition, setCurrentPosition] = useState(0);
-    const [hoveredIndex, setHoveredIndex] = useState(-1); // Estado para controlar el índice con hover
-
-    const handleScrollLeft = () => {
-        const bloqueWidth = bloqueRef.current.offsetWidth;
-        setCurrentPosition((prevPosition) => Math.max(prevPosition - bloqueWidth, 0));
+    const [hoveredIndex, setHoveredIndex] = useState(-1);
+    const onScrollLeft = () => {
+        setCurrentPosition(prevPosition => handleScrollLeft(prevPosition, bloqueRef));
     };
-
-    const handleScrollRight = () => {
-        const bloqueWidth = bloqueRef.current.offsetWidth;
-        const maxPosition = bloqueRef.current.scrollWidth - bloqueRef.current.offsetWidth;
-        setCurrentPosition((prevPosition) => Math.min(prevPosition + bloqueWidth, maxPosition));
+    const onScrollRight = () => {
+        setCurrentPosition(prevPosition => handleScrollRight(prevPosition, bloqueRef));
     };
-
-    const handleMouseEnter = (index) => {
-        setHoveredIndex(index);
-    };
-
-    const handleMouseLeave = () => {
-        setHoveredIndex(-1);
-    };
-
     return (
         <section id="sliderImgServicios" ref={bloqueRef}>
             {imgData.map((data, index) => (
@@ -33,11 +19,11 @@ function SliderContenidoHome({ imgData }) {
                     className="bloqueSliderServicios"
                     key={index}
                     style={{ transform: `translateX(-${currentPosition}px)` }}
-                    onMouseEnter={() => handleMouseEnter(index)}
-                    onMouseLeave={handleMouseLeave}
+                    onMouseEnter={() => handleMouseEnter(index, setHoveredIndex)}
+                    onMouseLeave={() => handleMouseLeave(setHoveredIndex)}
                 >
                     <div className="imageWrapper" style={{ backgroundImage: `url(${data.imgSrc})` }}>
-                        {hoveredIndex === index && ( // Mostrar contenido del hover si el índice coincide
+                        {hoveredIndex === index && (
                             <div className="hoverContent">
                                 <h4 id='tituloHover'>{data.imgTitle}</h4>
                                 <p id='textoHover'>{data.imgDescription}</p>
@@ -50,15 +36,13 @@ function SliderContenidoHome({ imgData }) {
                     </div>
                 </article>
             ))}
-
-            <div className="sliderArrows arrowLeft" onClick={handleScrollLeft}>
-            <img src={FlechaIzquierdaImg} />
+            <div className="sliderArrows arrowLeft" onClick={onScrollLeft}>
+                <img src={FlechaIzquierdaImg} alt="Arrow Left" />
             </div>
-            <div className="sliderArrows arrowRight" onClick={handleScrollRight}>
-                <img src={FlechaDerechaImg} />
+            <div className="sliderArrows arrowRight" onClick={onScrollRight}>
+                <img src={FlechaDerechaImg} alt="Arrow Right" />
             </div>
         </section>
     );
 }
-
 export default SliderContenidoHome;

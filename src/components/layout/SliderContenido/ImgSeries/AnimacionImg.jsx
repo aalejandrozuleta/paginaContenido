@@ -3,7 +3,6 @@ import RickMortyImg from "../../../../assets/Caratulas/Series/Rick y Morty.jpeg"
 import TeenTitansImg from "../../../../assets/Caratulas/Series/Teen Titans GO!.jpeg";
 import PeppaImg from "../../../../assets/Caratulas/Series/Peppa Pig.jpeg";
 import LoudHouseImg from "../../../../assets/Caratulas/Series/The loud house.jpeg";
-
 export const AnimacionImg = [
     {
         imgSrc: AttackImg,

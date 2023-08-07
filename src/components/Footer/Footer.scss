@@ -7,7 +7,6 @@ footer {
     height: 60px;
     padding: 0 20px;
     background-color: $sobrePuestos;
-
     h3 {
         color: #fff;
         font-size: 20px;
@@ -23,7 +22,6 @@ footer {
         }
     }
 }
-
 @media screen and (max-width:767px) {
     footer {
         @include grid-center;
@@ -31,9 +29,7 @@ footer {
         text-align: center;
         place-content: center;
     }
-
     #logosRedes {
         margin: auto 20px auto 10px;
     }
 }
-

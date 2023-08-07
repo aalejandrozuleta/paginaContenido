@@ -7,17 +7,13 @@ import ElniñoImg from "../../../assets/Caratulas/Peliculas/AcrosSpider.jpg";
 
 export const SliderHome = () => {
     const imgSlider = [AcsImg, BadboysImg, BajoImg, ApostadorImg, ElniñoImg];
-
 	const [currentIndex, setCurrentIndex] = useState(0);
-
 	useEffect(() => {
 		const interval = setInterval(() => {
 			setCurrentIndex((prevIndex) => (prevIndex + 1) % imgSlider.length);
 		}, 3000);
-
 		return () => clearInterval(interval);
 	}, []);
-
 	return (
 		<div className="slider-container">
 			<img

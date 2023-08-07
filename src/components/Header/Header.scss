@@ -31,7 +31,6 @@ header {
                     text-decoration: none;
                     color: #fff;
                     @include grid-center;
-            
                 }
                 @include hover;
                 
@@ -63,7 +62,6 @@ header {
         }
     }
 }
-
 #buscador {
     @include border;
     padding: 10px;
@@ -71,26 +69,20 @@ header {
     @include box-shadow;
     width: 80%;
 }
-
 #logoNavegacionPrincipal {
     width: 50%;
     height: 50%;
     @include border;
 }
-
-
 //! Responsive Tablet
-
 @media screen and (max-width: 768px) {
     header {
         grid-template-columns: none;
         grid-template-rows: repeat(2,50%);
     }
-
     #buscador {
         width: 60%;
     }
-
     #logoNavegacionPrincipal {
         display: none;
     }

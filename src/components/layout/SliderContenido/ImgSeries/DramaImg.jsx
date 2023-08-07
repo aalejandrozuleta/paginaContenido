@@ -3,7 +3,6 @@ import LawImg from "../../../../assets/Caratulas/Series/Law & Order.jpeg";
 import CriminalImg from "../../../../assets/Caratulas/Series/Criminal Minds.jpg";
 import GoodDoctorImg from "../../../../assets/Caratulas/Series/Good Doctore.jpg";
 import BlueBoodsImg from "../../../../assets/Caratulas/Series/Blue Boods.jpeg";
-
 export const DramaImg = [
     {
         imgSrc: GreyImg,

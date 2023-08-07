@@ -5,13 +5,10 @@ import { DramaImg } from '../../components/layout/SliderContenido/ImgSeries/Dram
 import { SliderContenido } from '../../components/layout/SliderContenido/SliderContenido';
 import {Footer} from '../../components/Footer/Footer';
 
-
-
 export const Series = () => {
   return (
     <div>
       <Header />
-
       <section>
         <article id='drama'>
         <SliderContenido 
@@ -20,7 +17,6 @@ export const Series = () => {
           imgData={DramaImg}
         />
         </article>
-
         <article id="comedia">
           <SliderContenido 
             categoria={"Comedia"}
@@ -28,7 +24,6 @@ export const Series = () => {
             imgData={ComediaImg}
           />
         </article>
-
         <article id='animacion'>
           <SliderContenido 
           categoria={"Animacion"}

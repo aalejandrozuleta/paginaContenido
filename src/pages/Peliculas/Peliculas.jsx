@@ -4,12 +4,10 @@ import { DramaImg } from "../../components/layout/SliderContenido/ImgContenido/D
 import { ComediaImg } from "../../components/layout/SliderContenido/ImgContenido/ComediaImg";
 import { AnimacionImg } from "../../components/layout/SliderContenido/ImgContenido/AnimacionImg";
 import { Footer } from "../../components/Footer/Footer";
-
 export const Peliculas = () => {
     return (
         <div>
             <Header />
-
             <section>
                 <article id="drama">
                     <SliderContenido
@@ -20,7 +18,6 @@ export const Peliculas = () => {
                         imgData={DramaImg}
                     />
                 </article>
-
                 <article id="comedia">
                     <SliderContenido
                         categoria={"Comedia"}
@@ -30,7 +27,6 @@ export const Peliculas = () => {
                         imgData={ComediaImg}
                     />
                 </article>
-
                 <article id="animacion">
                     <SliderContenido
                         categoria={"Animacion"}
@@ -41,7 +37,6 @@ export const Peliculas = () => {
                     />
                 </article>
             </section>
-
             <Footer />
         </div>
     );

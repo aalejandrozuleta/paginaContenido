@@ -5,9 +5,6 @@ import SliderContenidoHome from "../../components/layout/SliderContenidoHome/Sli
 import { Footer } from "../../components/Footer/Footer";
 //**Funcionalidades */
 import { imgData } from "../../components/layout/SliderContenidoHome/ImgData";
-
-
-
 export const Home = () => {
   return (
     <div>

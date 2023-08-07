@@ -3,7 +3,6 @@ import PadreFamiliaImg from "../../../../assets/Caratulas/Series/Padre de Famili
 import CobraKAiImg from "../../../../assets/Caratulas/Series/Cobra Kai.jpeg";
 import TedImg from "../../../../assets/Caratulas/Series/Ted Lasso.jpg";
 import FuturamaImg from "../../../../assets/Caratulas/Series/Futurama.jpg";
-
 export const ComediaImg = [
     {
         imgSrc: SimpsonImg,

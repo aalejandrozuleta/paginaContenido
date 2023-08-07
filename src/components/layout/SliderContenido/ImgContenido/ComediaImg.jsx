@@ -3,7 +3,6 @@ import TedImg from "../../../../assets/Caratulas/Peliculas/Ted.jpg";
 import GuardianesBahiaImg from "../../../../assets/Caratulas/Peliculas/Baywatch.jpg";
 import BadBoysImg from "../../../../assets/Caratulas/Peliculas/BadBoys.jpg";
 import RideAlongImg from "../../../../assets/Caratulas/Peliculas/RideAlong.jpg";
-
 export const ComediaImg = [
     {
         imgSrc: ParejaExplosivaImg,

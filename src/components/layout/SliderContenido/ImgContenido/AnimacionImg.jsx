@@ -3,7 +3,6 @@ import GatoBotasImg from "../../../../assets/Caratulas/Peliculas/GatoBotas.jpg";
 import SpidermanImg2 from "../../../../assets/Caratulas/Peliculas/AcrosSpider.jpg";
 import EncantoImg from "../../../../assets/Caratulas/Peliculas/Encanto.jpg";
 import ShrekImg from "../../../../assets/Caratulas/Peliculas/Shrek.jpg";
-
 export const AnimacionImg = [
     {
         imgSrc: SpidermanImg,

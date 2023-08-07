@@ -4,7 +4,6 @@ import EncantoImg from "../../../assets/Caratulas/PeliculasPequeñas/2.jpg";
 import GatoBotasImg from "../../../assets/Caratulas/PeliculasPequeñas/3.jpg";
 import ShrekImg from "../../../assets/Caratulas/PeliculasPequeñas/4.jpg";
 import SpidermanIMg from "../../../assets/Caratulas/PeliculasPequeñas/5.jpg";
-
 export const imgData = [
     {
         imgSrc: BaywatchImg,

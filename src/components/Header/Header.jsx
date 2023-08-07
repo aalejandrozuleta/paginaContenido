@@ -1,8 +1,6 @@
 
 import { Link } from "react-router-dom";
-
 import LogoImg from "../../assets/Logos/logoPelicula.svg";
-
 function Header() {
     const scrollToSection = (id) => {
         const element = document.querySelector(id);
@@ -10,7 +8,6 @@ function Header() {
             element.scrollIntoView({ behavior: "smooth" });
         }
     };
-
     const enlacesNavegacion = [
         { mensaje: "Inicio", link: "/" },
         { mensaje: "Peliculas", link: "/peliculas" },
@@ -25,7 +22,6 @@ function Header() {
             ]
         }
     ];
-
     const renderSubMenu = (submenu) => (
         <ul className="submenuNavPrincipal">
             {submenu.map((subenlace, subIndex) => (
@@ -40,7 +36,6 @@ function Header() {
             ))}
         </ul>
     );
-
     return (
         <header>
             <nav id="navegacionPrincipal">
@@ -62,12 +57,9 @@ function Header() {
                     ))}
                 </ul>
             </nav>
-
             <input id="buscador" type="text" placeholder="Buscar" />
-
             <img src={LogoImg} alt="Esto es un logo" id="logoNavegacionPrincipal" />
         </header>
     );
 }
-
 export default Header;
