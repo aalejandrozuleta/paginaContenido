@@ -39,8 +39,8 @@ function SliderContenidoHome({ imgData }) {
                     <div className="imageWrapper" style={{ backgroundImage: `url(${data.imgSrc})` }}>
                         {hoveredIndex === index && ( // Mostrar contenido del hover si el índice coincide
                             <div className="hoverContent">
-                                <h4>{data.imgTitle}</h4>
-                                <p>{data.imgDescription}</p>
+                                <h4 id='tituloHover'>{data.imgTitle}</h4>
+                                <p id='textoHover'>{data.imgDescription}</p>
                                 <div className="hoverButtons">
                                     <button>Ver</button>
                                     <button>Ver tráiler</button>
