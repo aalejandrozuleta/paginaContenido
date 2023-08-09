@@ -1,8 +1,8 @@
-import AttackImg from "../../../../assets/Caratulas/Series/Attack on Titans.jpeg";
-import RickMortyImg from "../../../../assets/Caratulas/Series/Rick y Morty.jpeg";
-import TeenTitansImg from "../../../../assets/Caratulas/Series/Teen Titans GO!.jpeg";
-import PeppaImg from "../../../../assets/Caratulas/Series/Peppa Pig.jpeg";
-import LoudHouseImg from "../../../../assets/Caratulas/Series/The loud house.jpeg";
+import AttackImg from "../../../../assets/Series/AttackOnTitan.jpg";
+import RickMortyImg from "../../../../assets/Series/RickMorty.jpg";
+import TeenTitansImg from "../../../../assets/Series/TeenTitansGo.jpg";
+import PeppaImg from "../../../../assets/Series/PeppaPig.jpg";
+import LoudHouseImg from "../../../../assets/Series/TheLoudHouse.jpg";
 export const AnimacionImg = [
     {
         imgSrc: AttackImg,

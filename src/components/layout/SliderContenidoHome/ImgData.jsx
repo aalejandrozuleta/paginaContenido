@@ -1,9 +1,9 @@
 // imageData.js
-import BaywatchImg from "../../../assets/Caratulas/PeliculasPequeñas/1.jpg";
-import EncantoImg from "../../../assets/Caratulas/PeliculasPequeñas/2.jpg";
-import GatoBotasImg from "../../../assets/Caratulas/PeliculasPequeñas/3.jpg";
-import ShrekImg from "../../../assets/Caratulas/PeliculasPequeñas/4.jpg";
-import SpidermanIMg from "../../../assets/Caratulas/PeliculasPequeñas/5.jpg";
+import BaywatchImg from "../../../assets/Peliculas/Baywatch.jpg";
+import EncantoImg from "../../../assets/Peliculas/Encanto.jpg";
+import GatoBotasImg from "../../../assets/Peliculas/PussInBoots-TheLastWish.jpg";
+import ShrekImg from "../../../assets/Peliculas/Shrek.jpg";
+import SpidermanIMg from "../../../assets/Peliculas/Spiderman-AcrossTheSpiderverse.jpg";
 export const imgData = [
     {
         imgSrc: BaywatchImg,

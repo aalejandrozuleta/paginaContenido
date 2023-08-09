@@ -1,9 +1,9 @@
 // DramaImg.jsx (o el archivo correspondiente)
-import TheWhaleImg from "../../../../assets/Caratulas/Peliculas/Whale.jpg";
-import PijamaIMg from "../../../../assets/Caratulas/Peliculas/PijamaRayas.jpg";
-import BajoEstrellaImg from "../../../../assets/Caratulas/Peliculas/BajoEstrellas.jpg";
-import JokerImg from "../../../../assets/Caratulas/Peliculas/Joker.jpg";
-import ApostadorImg from "../../../../assets/Caratulas/Peliculas/Apostador.jpg";
+import TheWhaleImg from "../../../../assets/Peliculas/TheWhale.jpg";
+import PijamaIMg from "../../../../assets/Peliculas/TheBoyInTheStripedPyjamas.jpg";
+import BajoEstrellaImg from "../../../../assets/Peliculas/TheFaultInOurStars.jpg";
+import JokerImg from "../../../../assets/Peliculas/Joker.jpg";
+import ApostadorImg from "../../../../assets/Peliculas/TheGambler.jpg";
 export const DramaImg = [
     {
         imgSrc: TheWhaleImg,

@@ -1,8 +1,8 @@
-import GreyImg from "../../../../assets/Caratulas/Series/Grey'S Anatomy.jpg";
-import LawImg from "../../../../assets/Caratulas/Series/Law & Order.jpeg";
-import CriminalImg from "../../../../assets/Caratulas/Series/Criminal Minds.jpg";
-import GoodDoctorImg from "../../../../assets/Caratulas/Series/Good Doctore.jpg";
-import BlueBoodsImg from "../../../../assets/Caratulas/Series/Blue Boods.jpeg";
+import GreyImg from "../../../../assets/Series/GreysAnatomy.jpg";
+import LawImg from "../../../../assets/Series/LawOrder.jpg";
+import CriminalImg from "../../../../assets/Series/CriminalMinds.jpg";
+import GoodDoctorImg from "../../../../assets/Series/TheGoodDoctor.jpg";
+import BlueBoodsImg from "../../../../assets/Series/BlueBloods.jpg";
 export const DramaImg = [
     {
         imgSrc: GreyImg,

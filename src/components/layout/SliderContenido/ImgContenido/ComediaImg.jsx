@@ -1,8 +1,8 @@
-import ParejaExplosivaImg from "../../../../assets/Caratulas/Peliculas/ParejaExplosiva.jpg";
-import TedImg from "../../../../assets/Caratulas/Peliculas/Ted.jpg";
-import GuardianesBahiaImg from "../../../../assets/Caratulas/Peliculas/Baywatch.jpg";
-import BadBoysImg from "../../../../assets/Caratulas/Peliculas/BadBoys.jpg";
-import RideAlongImg from "../../../../assets/Caratulas/Peliculas/RideAlong.jpg";
+import ParejaExplosivaImg from "../../../../assets/Peliculas/RushHour3.jpg";
+import TedImg from "../../../../assets/Peliculas/Ted.jpg";
+import GuardianesBahiaImg from "../../../../assets/Peliculas/Baywatch.jpg";
+import BadBoysImg from "../../../../assets/Peliculas/BadBoysForLife.jpg";
+import RideAlongImg from "../../../../assets/Peliculas/RideAlong.jpg";
 export const ComediaImg = [
     {
         imgSrc: ParejaExplosivaImg,

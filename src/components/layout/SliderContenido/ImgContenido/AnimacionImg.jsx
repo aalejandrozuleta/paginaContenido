@@ -1,8 +1,8 @@
-import SpidermanImg from "../../../../assets/Caratulas/Peliculas/SpiderMan.jpg";
-import GatoBotasImg from "../../../../assets/Caratulas/Peliculas/GatoBotas.jpg";
-import SpidermanImg2 from "../../../../assets/Caratulas/Peliculas/AcrosSpider.jpg";
-import EncantoImg from "../../../../assets/Caratulas/Peliculas/Encanto.jpg";
-import ShrekImg from "../../../../assets/Caratulas/Peliculas/Shrek.jpg";
+import SpidermanImg from "../../../../assets/Peliculas/Spiderman-IntoTheSpiderverse.jpg";
+import GatoBotasImg from "../../../../assets/Peliculas/PussInBoots-TheLastWish.jpg";
+import SpidermanImg2 from "../../../../assets/Peliculas/Spiderman-AcrossTheSpiderverse.jpg";
+import EncantoImg from "../../../../assets/Peliculas/Encanto.jpg";
+import ShrekImg from "../../../../assets/Peliculas/Shrek.jpg";
 export const AnimacionImg = [
     {
         imgSrc: SpidermanImg,

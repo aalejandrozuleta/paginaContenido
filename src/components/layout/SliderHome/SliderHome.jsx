@@ -1,12 +1,9 @@
 import { useState, useEffect } from "react";
-import AcsImg from "../../../assets/Caratulas/Peliculas/Baywatch.jpg";
-import BadboysImg from "../../../assets/Caratulas/Peliculas/Encanto.jpg";
-import BajoImg from "../../../assets/Caratulas/Peliculas/BadBoys.jpg";
-import ApostadorImg from "../../../assets/Caratulas/Peliculas/Apostador.jpg";
-import ElniñoImg from "../../../assets/Caratulas/Peliculas/AcrosSpider.jpg";
+import ImgData from "./ImgData";
+
 
 export const SliderHome = () => {
-    const imgSlider = [AcsImg, BadboysImg, BajoImg, ApostadorImg, ElniñoImg];
+    const imgSlider = ImgData;
 	const [currentIndex, setCurrentIndex] = useState(0);
 	useEffect(() => {
 		const interval = setInterval(() => {

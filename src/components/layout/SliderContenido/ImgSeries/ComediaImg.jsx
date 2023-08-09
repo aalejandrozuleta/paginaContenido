@@ -1,8 +1,8 @@
-import SimpsonImg from "../../../../assets/Caratulas/Series/Los Simpsons.jpeg";
-import PadreFamiliaImg from "../../../../assets/Caratulas/Series/Padre de Familia.jpg";
-import CobraKAiImg from "../../../../assets/Caratulas/Series/Cobra Kai.jpeg";
-import TedImg from "../../../../assets/Caratulas/Series/Ted Lasso.jpg";
-import FuturamaImg from "../../../../assets/Caratulas/Series/Futurama.jpg";
+import SimpsonImg from "../../../../assets/Series/TheSimpsons.jpg";
+import PadreFamiliaImg from "../../../../assets/Series/FamilyGuy.jpg";
+import CobraKAiImg from "../../../../assets/Series/CobraKai.jpg";
+import TedImg from "../../../../assets/Series/TedLasso.jpg";
+import FuturamaImg from "../../../../assets/Series/Futurama.jpg";
 export const ComediaImg = [
     {
         imgSrc: SimpsonImg,
