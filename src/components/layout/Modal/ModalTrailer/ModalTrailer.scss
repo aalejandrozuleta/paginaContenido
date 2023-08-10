@@ -8,9 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; // Asegura que el modal esté en el frente
+    z-index: 100; 
   }
-  
   .modal {
     background-color: black;
     color: white;
@@ -21,11 +20,6 @@
     text-align: center;
     position: relative;
   }
-  
-  .modal-content {
-    /* Añade estilos adicionales para el contenido del modal si es necesario */
-  }
-  
   .close-button {
     position: absolute;
     top: 10px;
