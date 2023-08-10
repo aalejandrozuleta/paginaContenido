@@ -4,6 +4,7 @@ import { Peliculas } from "./pages/Peliculas/Peliculas";
 import { Series } from "./pages/Series/Series";
 //* Estilos 
 import "./public/Sass/Style.scss";
+
 function App() {
   return (
     <Router>
